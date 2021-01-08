@@ -1,13 +1,46 @@
-.main-content {
+.game .counter {
   margin-top: 50px;
+  background-color: #d18521;
+  padding: 10px 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-.main-content .col-md-3 {
+.game .counter .row .col-md-6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.game .counter .row .col-md-6 label {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.game .counter .row .col-md-6 input {
+  height: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-right: 20px;
+}
+
+.game .counter .row .col-md-6 button {
+  height: 40px;
+}
+
+.game .main-content {
+  margin-top: 100px;
+}
+
+.game .main-content .col-md-3 {
   height: 200px;
   border: 1px solid black;
-  background-color: brown;
+  background-color: #d18521;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   margin-bottom: 10px;
 }
 /*# sourceMappingURL=main.css.map */
