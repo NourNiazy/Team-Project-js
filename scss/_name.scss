@@ -34,8 +34,16 @@ $main-color:rgb(209, 133, 33);
     background-color: $main-color;
     box-sizing: border-box;
     margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 
+}
+.img-style{
+  height: 50px;
+  width: 50px;
+  visibility: hidden;
 }
