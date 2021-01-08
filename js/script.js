@@ -24,7 +24,6 @@ generate.addEventListener("click",function GenerateButton(e)
       document.querySelector(".img-style").style.visibility="visible";
       var statusBar = document.querySelector('.result');
       statusBar.textContent ="You Won after "+ counter +" Steps";
-     // alert("You Won after "+ counter +" Steps");
     }
     else
     counter++;
@@ -34,6 +33,9 @@ generate.addEventListener("click",function GenerateButton(e)
 
 
 });
+function DisableNextButton( ) {
+  document.getElementById("generate").disabled = 'true';
+}
 /*
 function getRandomNumberBetween(min,max){
     return Math.floor(Math.random()*(max-min+1)+min);

@@ -29,6 +29,7 @@
 
 .game .counter .row .col-md-6 button {
   height: 40px;
+  margin-right: 10px;
 }
 
 .game .main-content {
