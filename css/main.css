@@ -1,12 +1,37 @@
+.container {
+  width: 1030px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    width: 100%;
+    padding: 0px 20px;
+  }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #e1f2ff;
+}
+
+.game {
+  font-family: 'Poppins', sans-serif;
+  color: #2c2a2b;
+}
+
 .game .counter {
-  margin-top: 50px;
-  background-color: #d18521;
+  margin-top: 20px;
+  background-color: white;
   padding: 10px 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.01);
+          box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.01);
 }
 
-.game .counter .row .col-md-6 {
+.game .counter .col-md-6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,31 +40,125 @@
           align-items: center;
 }
 
-.game .counter .row .col-md-6 label {
-  margin-right: 10px;
-  font-size: 20px;
+@media only screen and (max-width: 992px) {
+  .game .counter .col-md-6 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
-.game .counter .row .col-md-6 input {
+.game .counter .col-md-6 label {
+  margin-right: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 992px) {
+  .game .counter .col-md-6 label {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.game .counter .col-md-6 input {
   height: 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin-right: 20px;
+  margin-right: 10px;
+  background-color: #e1f2ff;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 
-.game .counter .row .col-md-6 button {
+.game .counter .col-md-6 button {
   height: 40px;
   margin-right: 10px;
+  border: 1px solid  #1388e5;
+  background-color: #1388e5;
+  color: white;
+  border-radius: 5px;
+  padding: 0px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.game .counter .col-md-6 button:hover {
+  background-color: white;
+  border: 1px solid  #1388e5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #1388e5;
+}
+
+.game .result-content {
+  margin-top: 50px;
+}
+
+.game .result-content .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.game .result-content .row .result {
+  font-size: 40px;
+  font-weight: bold;
+  -webkit-animation: pulse 1s infinite;
+          animation: pulse 1s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    color: #2c2a2b;
+  }
+  100% {
+    color: #1388e5;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    color: #2c2a2b;
+  }
+  100% {
+    color: #1388e5;
+  }
 }
 
 .game .main-content {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
-.game .main-content .col-md-3 {
-  height: 200px;
-  border: 1px solid black;
-  background-color: #d18521;
+.game .main-content .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.game .main-content .row .col-md-3 {
+  width: 250px !important;
+  height: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3bb3e7), to(#1575c4));
+  background-image: linear-gradient(#3bb3e7, #1575c4);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-bottom: 10px;
@@ -54,9 +173,22 @@
           align-items: center;
 }
 
+.game .main-content .row .col-md-3:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3bb3e7), to(#a4c0d6));
+  background-image: linear-gradient(#3bb3e7, #a4c0d6);
+}
+
+@media only screen and (max-width: 992px) {
+  .game .main-content .row .col-md-3 {
+    width: 100%;
+  }
+}
+
 .img-style {
-  height: 50px;
-  width: 50px;
+  width: 100% !important;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
   visibility: hidden;
 }
 /*# sourceMappingURL=main.css.map */
