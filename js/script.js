@@ -16,7 +16,7 @@ generate.addEventListener("click",function GenerateButton(e)
       if(i===xbox){
         var gift = document.createElement("img");
         gift.classList.add("img-style");
-        gift.src  = '../img/WhatsApp Image 2021-01-09 at 10.35.01 AM.jpeg'
+        gift.src  = '../img/img.jpeg'
         div.appendChild(gift);
       }
       div.addEventListener("click",function SrearchGift(e){
