@@ -16,7 +16,7 @@ generate.addEventListener("click",function GenerateButton(e)
       if(i===xbox){
         var gift = document.createElement("img");
         gift.classList.add("img-style");
-        gift.src  = '../img/img.jpg'
+        gift.src  = './img/img.jpg'
         div.appendChild(gift);
       }
       div.addEventListener("click",function SrearchGift(e){
